@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ContentViewsInCarouselView.View2">
+    <ContentView.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Label Text="ScrollViewを用い記事の下書きを１文で表示してます。"
+                       TextColor="DarkBlue"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <Label FontSize="Large"
+                       Text=" Xamarin Advent Calendar 2020 19日目の記事です。先日、異なる形式の画面をスワイプで切り替えたいと思いCarousel ViewとContent Viewで実現できたので手順を書きます。より良い書き方ご存知の方いらっしゃれば、ご教示いただければ嬉しいです。## 環境.NET Core 5.0 Xamarin.Forms 4.8.0.1451 Visual Studio for Mac 8.8.4.30 macOS Big Sur 11.1## Carousel Viewとはスワイプして項目を切り替えられるViewです。2020/12/19現在、Docsにはまだ「Preview」の表示があります。もう1年以上プレビュー版のようでして、新しいコントロールの正式版を出すには長い道のりが必要なんだろうな、と慮る次第です。## Content Viewとは カスタムコントロールをつくるのに利用できるViewです。Docsには、CardViewをつくる例が載ってます。今回はこのContent Viewで3パターンViewを作り、Carousel Viewに入れてスワイプして切り替えられるようにします。## Carousel ViewにContent Viewを入れるView ModelでListに格納する形で書いています。" />
+            </StackLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

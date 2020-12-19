@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContentViewsInCarouselView.MainPage">
+
+        <ContentPage.Content>
+        <StackLayout>
+            <StackLayout >
+                <Label Text="Sample" FontSize="Title" TextColor="DarkOrange" />
+            </StackLayout>
+            <CarouselView x:Name="carouselView"
+                          ItemsSource="{Binding ContentViews}"
+                          Position="{Binding PositionSelected}"
+                          >
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView Content="{Binding Content}"/>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <StackLayout  Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                <Button Text="View1" HorizontalOptions="CenterAndExpand"
+                        Command="{Binding SelectTabCommand}"
+                        CommandParameter="0">
+                </Button>
+                <Button Text="View2" HorizontalOptions="CenterAndExpand"
+                        Command="{Binding SelectTabCommand}"
+                        CommandParameter="1">
+                </Button>
+                <Button Text="View3" HorizontalOptions="CenterAndExpand"
+                        Command="{Binding SelectTabCommand}"
+                        CommandParameter="2">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

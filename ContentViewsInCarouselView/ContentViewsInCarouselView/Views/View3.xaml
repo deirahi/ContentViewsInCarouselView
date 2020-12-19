@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ContentViewsInCarouselView.View3">
+    <ContentView.Content>
+            <BoxView Color="CornflowerBlue"
+             CornerRadius="10"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+    </ContentView.Content>
+</ContentView>
